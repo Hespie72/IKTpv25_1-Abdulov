@@ -8,6 +8,16 @@
 #print(f"Tere maalim! Tervitan sind {nimi.upper{}}. sa oled {vanus} aastat vana") #upper teeb suurtähed
 #print(f"Tere maalim! Tervitan sind {nimi.lower{}}. sa oled {vanus} aastat vana") #lower teeb väiketähed
 
+# Kirjuta enda koodis laual olevate kommide arv muutujasse(kommide arv on juhuslik). 
+# Seejärel kuva muutujas olev kommide arv ekraanile kasutades print() käsku.
+# Küsi kasutajalt sisendit, mitu kommi ta soovib laualt ära võtta.
+# Eemalda soovitud kommide arv laual olevate kommide arvust ja kuva ekraanile,
+# kui palju komme laual nüüd on.
+from random import *
+laua_peal=randint(10, 50) #juhuslik arv 10-50
+print(f"Laual on {laua_peal} kommi")
+võtab=int(input("Mitu kommi sa soovid võtta? ")) #sesind võtab teisendab stringi täisarvuks
+laua_peal=laua_peal-võtab
 
 
 
