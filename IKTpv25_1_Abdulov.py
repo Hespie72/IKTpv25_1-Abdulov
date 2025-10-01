@@ -1,0 +1,30 @@
+#from os import PathLike
+
+
+#print ("Tere maailm!")
+#nimi=input("Sisesta oma nimi: ").capitalize()# sisend ja ootab enterit
+#print(f"Tere maailm! Tervitan sind {nimi}")
+#vanus=int(input("Sisesta oma vanus: "))#int teisendab stringi täisarvuks
+#print(f"Tere maalim! Tervitan sind {nimi.upper{}}. sa oled {vanus} aastat vana") #upper teeb suurtähed
+#print(f"Tere maalim! Tervitan sind {nimi.lower{}}. sa oled {vanus} aastat vana") #lower teeb väiketähed
+
+
+
+
+
+# 2.
+# Mis tüüpi on järgnevad muutujad:
+# a) vanus = 18
+# b) eesnimi = "Jaak"
+# c) pikkus = 1.65
+# d) kas_on_koolis = True
+# Mis võimalus veel peale True oleks viimast muutujat väärtustada? Kuidas võiks nende
+# Kirjuta kood tüüpide kontrollimiseks.
+vanus = 18          #int
+eesnimi = "Jaak"    #str
+pikkus = 1.65      #float
+kas_kaib_koolis = True  #bool
+print(f"vanus {vanus} on: {type(vanus)}")
+print(f"eesnimi {eesnimi} on: {type(eesnimi)}")
+print(f"pikkus {pikkus} on: {type(pikkus)}")
+print(f"kas_kaib_koolis {kas_kaib_koolis} on: {type(kas_kaib_koolis)}")
