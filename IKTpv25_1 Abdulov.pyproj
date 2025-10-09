@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>48f6f2aa-4ed1-47de-9505-de2a0f4864f9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>IKTpv25_1_Abdulov.py</StartupFile>
+    <StartupFile>Tund2_vitaliiabdulov.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="IKTpv25_1_Abdulov.py" />
+    <Compile Include="Tund2_vitaliiabdulov.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
