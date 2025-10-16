@@ -73,20 +73,128 @@
 #else:
 #        print("Palun sisesta ainult tähed")
 
-pikkus = int(input('Sisestage pikkus?'))
-laius = int(input('Siseta laius'))
+#pikkus = int(input('Sisestage pikkus? '))
+#laius = int(input('Siseta laius '))
+#if pikkus>0 and laius>0:
+#    
+#    pindala = pikkus * laius
+#    print(f'pindala suurus on {pindala} ')
+#    user = input('Kas soovite remondi teha? ').capitalize()
+#    if user.isalpha() and user == 'Jah':
+#        hind = float(input('ruutmeetri hind? '))
+#        if hind>0:
+#            remondi_hind = hind * pindala
+#            print(f'remondi summa on {remondi_hind} eurot')
+#            kes = input("kes remondi teeb?(ise/töötaja) ").capitalize()
+#            if kes.isalpha() and kes == 'Ise':
+#                print(f'siis summa on {remondi_hind} eurot')
+#            else:
+#                print(f'siis summa on {remondi_hind + 300} eurot')
+#        else:
+#            print("Hind ei saa olla negativne!")
+#    else:
+#        print('Head päeva!')
+#else: 
+#   print('Arvud peavad olema suurem kui 0!')
 
-pindala = pikkus * laius
-print(f'pindala suurus on{pindala}')
-user = input('Kas soovite remondi teha? ').capitalize()
-if user.isalpha() and user == 'Jah':
-    hind = float(input('ruutmeetri hind? '))
-    remondi_hind = hind * pindala
-    print(f'remondi summa on {remondi_hind} eurot')
-    kes = input("kes remondi teeb?(ise/töötaja) ").capitalize()
-    if kes.isalpha() and kes == 'Ise':
-        print(f'siis summa on {remondi_hind} eurot')
-    else:
-        print(f'siis summa on {remondi_hind + 300} eurot')
-else:
-    print('Head päeva!')
+#4 Allahindus
+
+#Leia 30% soodustusega hinna, kui alghind on suurem kui 700
+
+#hind = input('Sisesta hind: ')
+#if hind.isdigit():
+#    hind = float(hind)
+#    if hind > 700:
+#        soodus_hind = hind * 0.7 #või "hind *= 0.7"
+#        print(f'Soodushind on {soodus_hind} eurot')
+#    else:
+#        print(f'Hind on {hind} eurot')
+
+#5 Temperatuur
+
+#Küsi temperatuur ning teata, kas see on üle 18 kraadi (soovitav toasoojus talvel)
+
+#temp = input('Sisesta temperatuur: ')
+#if temp.isdigit():
+#try:
+#    temp = int(temp)
+#    if temp > 18:
+#        print('Temperatuur on üle 18 kraadi')
+#    else:
+#        print('Temperatuur on alla 18 kraadi')
+#except:
+#   print('Palun sisesta temperatuur ujukomaarvuna!')
+
+#6 Pikkus
+
+#Küsi inimese pikkus ning teata, kas ta on lühike, keskmine või pikk (piirid pane ise paika)
+try:
+    pikkus = float(input('Sisesta oma pikkus cm: '))
+    if pikkus  <= 145:
+        print('Olete lühike')
+    elif pikkus <= 185:
+        print('Olete keskmine')
+    elif pikkus >= 185:
+        print('Olete pikk')
+    else: 
+        print('Palun sisesta pikkus numbrina!')
+except:
+    print('Siseta numbrid!' )
+
+#7 Pikkus ja sugu
+#
+#Küsi inimeselt pikkus ja sugu ning teata, kas ta on lühike, keskmine või pikk (mitu tingimusplokki võib olla üksteise sees).
+#try:
+#    pikkus = float(input('Sisesta oma pikkus cm: '))
+#    sugu = input('Sisesta oma sugu (mees/naine): ').lower()
+#    if sugu == 'mees':
+#        if pikkus <= 160:
+#            print('Olete lühike mees')
+#        elif pikkus <= 190:
+#            print('Olete keskmine mees')
+#        elif pikkus > 190:
+#            print('Olete pikk mees')
+#        else:
+#            print('Palun sisesta pikkus numbrina!')
+#    elif sugu == 'naine':
+#        if pikkus <= 150:
+#            print('Olete lühike naine')
+#        elif pikkus <= 175:
+#            print('Olete keskmine naine')
+#        elif pikkus > 175:
+#            print('Olete pikk naine')
+#        else:
+#            print('Palun sisesta pikkus numbrina!')
+#    else:
+#        print('Palun sisesta sugu kas mees või naine!')
+#except:
+#    pass:
+#    print('Siseta numbrid! ')
+
+#8 Poes
+
+#Küsi inimeselt poes eraldi kas ta soovib osta piima, saia, leiba jne. Loo juhuslikud hinnad ja küsi mitu tükki tahad osta, kui tahad. Teata, mis summa maksma läheb(Kuva ekraanil tšekk).
+#from random import randint
+#piim_hind = randint(1,5)
+#leib_hind = randint(1,5)
+#liha_hind = randint(5,15)
+#leib = input('Kas sa tahad osta leib? ')
+#if leib.lower() == 'jah':
+#    tükki = int(input('Mitu tükki? '))
+#    leib_summa = leib_hind * tükki
+#else:
+#    leib_summa = 0
+#piim = input('Kas sa tahad osta piim? ')
+#if piim.lower() == 'jah':
+#    tükki = int(input('Mitu tükki? '))
+#    piim_summa = piim_hind * tükki
+#else:
+#     piim_summa = 0
+#liha = input('Kas sa tahad osta liha? ')
+#if liha.lower() == 'jah':
+#    tükki = int(input('Mitu tükki? '))
+#    liha_summa = liha_hind * tükki
+#else:
+#    liha_summa = 0
+#kokku = leib_summa + piim_summa + liha_summa
+#print(f"See on sinult {kokku} eurot")
