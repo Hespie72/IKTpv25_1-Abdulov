@@ -1,26 +1,27 @@
 # 1 variant
 #1. Kirjuta programm, mis antud arvu n (vahemikus 1 kuni 9) põhjal kuvab ekraanile n kuuske.
-# n = int(input("n on (1-9): "))
-# Jõulupuu = [
-#             "    /V\\     \t",
-#             "   / V \\    \t",
-#             "  / V V \\   \t",
-#             " /VV V VV\\  \t",
-# ]
+# n = int(input("kuidas jõlupuu on (1-9): "))
+# puu1 = r"    /V\     "
+# puu2 = r"   / V \    "
+# puu3 = r"  / V V \   "
+# puu4 = r" /VV V VV\  "
+
 # if 1 <= n <= 9:
-#     for line in Jõulupuu:
-#         print (line * n)
+#     print (puu1 * n)
+#     print (puu2 * n)
+#     print (puu3 * n)
+#     print (puu4 * n)
 # else: 
 #     print("siseta õige number")
-
 #2. Korruta kõik paaritud väärtused vahemikus 0 kuni kasutaja sisestatud arvuni (R).
-# R = int(input("R on: "))
-# tulemus = 1 
+R = int(input("R on: "))
+tulemus = 1
 
-# for i in range(1, R * 0, 2):
-#     tulemus = tulemus * i
+for i in range(0, 2 * R ):
+    tulemus = tulemus * i
+    print(tulemus, ",", tulemus * R)
 
-# print(f"Tulemus on: {R} on {tulemus}")
+print(f"Tulemus on: {R} on {tulemus}")
 # # 3.
 # import random
 # randomnumber = random.randint(1, 100)
