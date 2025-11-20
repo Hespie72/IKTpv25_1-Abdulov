@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>48f6f2aa-4ed1-47de-9505-de2a0f4864f9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>List Phytone.py</StartupFile>
+    <StartupFile>rock,paper,scissors.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="IKTpv25_1_Abdulov.py" />
     <Compile Include="List Phytone.py" />
+    <Compile Include="rock,paper,scissors.py" />
     <Compile Include="VitaliiAbdulov 3 kontrol töö.py" />
     <Compile Include="VitaliiAbdulov3.py" />
     <Compile Include="Tund2_vitaliiabdulov.py" />
