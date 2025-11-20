@@ -18,18 +18,18 @@
 # else: 
 #     print("siseta õige number")
 #2. Korruta kõik paaritud väärtused vahemikus 0 kuni kasutaja sisestatud arvuni (R).
-while True:
-   try:
-    R = int(input("Sisestage R-number: "))
-    break
-   except:
-       print("Siseta õige number!")
-for i in range(0, R + 1):
-    if i % 2 != 0:
-        print(f"{i} * {R} = {i * R}")
-    else:
-        print("Palun siseta õige number!")
-#3. неправильно
+# while True:
+#    try:
+#     R = int(input("Sisestage R-number: "))
+#     break
+#    except:
+#        print("Siseta õige number!")
+# for i in range(0, R + 1):
+#     if i % 2 != 0:
+#         print(f"{i} * {R} = {i * R}")
+#     else:
+#         print("Palun siseta õige number!")
+#3.
 # import random
 
 # N = random.randint(5, 15)  
@@ -42,18 +42,20 @@ for i in range(0, R + 1):
 #     if number > 0:
 #         positive_arv += 1
 # 4. проверка
-#   arv = int(input("Sisesta naturaalarv: "))
-
-#   paaris = 0 
-#   paaritu = 0  
+# while True:
+#   try:
+#       arv = int(input("Sisesta naturaalarv: "))
+#       break
+#   except:
+#       print("siseta õige number!")  
+# paaris = 0 
+# paaritu = 0  
 # try:
 #   for number in arv:
 #       if int(number) % 2 == 0:
 #          paaris += 1
 #       else:
 #             paaritu += 1
-# except:
-#    print("Palun siseta number!")
 # print(f"Arvus {arv} on {paaris} paarisarvu ja {paaritu} paaritut arvu.")
 # 5. проверка
 A = int(input("Sisesta arv A: "))
