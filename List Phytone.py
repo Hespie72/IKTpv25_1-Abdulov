@@ -1,10 +1,14 @@
 #List-loend
 #Loome listi
-l=[] #tühi list
+from ast import Str
+
+
+l=[]#tühi list
+l1=[]
 print(f"Listi algseis: {l}")
 while True:
     print("Tee valik:")
-    print("\n1-lisa elemente\n2-Lisa elemente pos-le\n3-Eemalda elemente pos jarge\n4-element")
+    print("\n1-lisa elemente\n2-Lisa elemente pos-le\n3-Eemalda elemente pos jarge\n4-element\n5-sort\n6-reverse\n7-clear\n8-2list")
     while True:
         try:
             valik=int(input())
@@ -50,7 +54,7 @@ while True:
             except:
                 print("Täisarv on vaja kasutada")
         eem_element=l.pop(pos)
-        print (f"Eemldatud element on {eem_element}")
+        print(f"Eemldatud element on {eem_element}")
         print(f"sinu list on {l} ")
     elif valik==4:
         element=input("Siseta element mid soovid eemaldada: ")
@@ -61,4 +65,27 @@ while True:
             for e in range(mitu):
                 print(f"Eemaldame element '{element}' {l.index(element)} positsioonilt")
                 l.remove(element)
+        print(f"Uuendatud list on {l}")
+    elif valik==5:
+        l.sort()
+        print(f"Sorteeritud list on {l}")
+    elif valik==6:
+        l.reverse()
+        print(f"Pööratud list on {l}")
+    elif valik==7:
+        l.clear()
+        print(f"List on tühi {l}")
+    elif valik==8:
+        while True:
+            try:
+                u=int(input("Mitu elementi soovid teise listi lisada? "))
+                if u>0:
+                    break
+            except:
+                print("siseta õige number!")
+
+        for e in range(u):
+            element1=input(f"sisesta {e}. element ")
+            l1.append(element)
+        l.extend(l1)
         print(f"Uuendatud list on {l}")
