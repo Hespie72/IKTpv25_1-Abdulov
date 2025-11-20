@@ -18,13 +18,17 @@
 # else: 
 #     print("siseta õige number")
 #2. Korruta kõik paaritud väärtused vahemikus 0 kuni kasutaja sisestatud arvuni (R).
-#     R = int(input("Sisestage R-number: "))
-# try:
-#     for i in range(0, R + 1):
-#         if i % 2 != 0:
-#             print(f"{i} * {R} = {i * R}")
-# except:
-#     print("Palun siseta õige number!")
+while True:
+   try:
+    R = int(input("Sisestage R-number: "))
+    break
+   except:
+       print("Siseta õige number!")
+for i in range(0, R + 1):
+    if i % 2 != 0:
+        print(f"{i} * {R} = {i * R}")
+    else:
+        print("Palun siseta õige number!")
 #3. неправильно
 # import random
 
