@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>48f6f2aa-4ed1-47de-9505-de2a0f4864f9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>rock,paper,scissors.py</StartupFile>
+    <StartupFile>4.1 töö listiga.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="4.1 töö listiga.py" />
     <Compile Include="IKTpv25_1_Abdulov.py" />
     <Compile Include="List Phytone.py" />
     <Compile Include="rock,paper,scissors.py" />
