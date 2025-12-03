@@ -120,5 +120,57 @@ k=[ 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'v', 'z', 'x', 'q', '
 #     loend_arvud[i], loend_arvud[-(i+1)] = loend_arvud[-(i+1)], loend_arvud[i]
 # print("Vahetatud loend: ", loend_arvud)
 # 6
-loend_arvud[]
-mitu=radint(2,20)
+# import random
+
+# loend_arvud=[]
+# mitu=random.randint(2,20)
+# for i in range(mitu):
+#     elem=random.randint(1,100)
+#     loend_arvud.append(elem)
+# print("Algne loend: ", loend_arvud)
+# suurim = max(loend_arvud)
+# mitu = len(loend_arvud)
+# jagamine = suurim / len(loend_arvud)+1
+# indeks = loend_arvud.index(suurim)
+# loend_arvud[indeks] = round(jagamine,2)
+# print("Uus loend: ", loend_arvud)
+# print(f"Suurim arv oli: {suurim}, mis jagatud loendi pikkusega {len(loend_arvud)} on {jagamine:.2f}")
+# 7
+# b=[16, 13, 7, 25, 34, 18, 9, 12, 5, 27]
+# e = input("kas sa tahad sortida kasvavalt või kahanevalt? (k/kahanevalt): ").lower()
+# if e == "k":
+#     b.sort()
+#     print("Loend kasvavalt: ", b)
+# elif e == "kahanevalt":
+#     b.sort(reverse=True)
+#     print("Loend kahanevalt: ", b)
+# else:
+#     print("Vale sisestus")
+# 8
+# a = ['tamm', 'taevas', 'elevant'] 
+# b = ['a', 'aa', 'aaa', 'aaaa', 'aaaaa'] 
+# c = ['qweasdqweas', 'q', 'rteww', 'ewqqqqq']
+# maxlen = max(len(w)for w in a)
+# vastu = [ w + "*" * (maxlen - len(w)) for w in a ]
+# print(f"{vastu}")
+# maxlen = max(len(w)for w in b)
+# vastu1 = [ w + "*" * (maxlen - len(w)) for w in b ]
+# print(f"{vastu1}")
+# maxlen = max(len(w)for w in c)
+# vastu2 = [ w + "*" * (maxlen - len(w)) for w in c ]
+# print(f"{vastu2}")
+# 9
+name1 = input("Sisesta esimene nimi: ")
+if name1.isalpha():
+    name1.capitalize()
+    print(f"Tere, {name1}!")
+    vowels = "eyuioa"
+    v = sum(1 for c in name1.lower() if c in vowels)
+    c = sum(1 for c in name1.lower() if c.isalpha() and c not in vowels)
+    print("kokku tähed:", len(name1))
+    print("täishäälikud:", v)
+    print("kaashäälikud:", c)   
+else:
+    print("Palun sisesta ainult tähti sisaldav nimi.")
+
+print(f"{v}")
