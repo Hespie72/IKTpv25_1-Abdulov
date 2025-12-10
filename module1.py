@@ -81,6 +81,42 @@ def season(kuu:int)->str:
         return "suvi"
     else:
         return "sügi"
-    #5
-    def bank(a:float,year:int)->float:
-        inttress=0.1
+#5
+def bank(a, years):
+    for _ in range(years):
+        a *= 1.10
+    return a
+#6
+def is_prime(n):
+    if n < 2:
+        print("Jagajad pole määratletud (arv pole algarv).")
+        return False
+
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            print("Jagajad:", i, "ja", n // i)
+            return False
+
+    return True
+#7
+def date(day, month, year):
+    # Päev peab olema 1..31 ja kuu 1..12
+    if month < 1 or month > 12 or day < 1 or day > 31:
+        return False
+
+    # Kuude päevad
+    days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+    # Liigaasta kontroll
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        days_in_month[1] = 29
+
+    return day <= days_in_month[month - 1]
+#9
+def average(numbers):
+    if not numbers:
+        return None
+    return sum(numbers) / len(numbers)
+#10
+def min_max(numbers):
+    return (min(numbers), max(numbers))
