@@ -79,8 +79,10 @@ def season(kuu:int)->str:
         return "kevad"
     elif kuu in [6, 7, 8]:
         return "suvi"
-    else:
+    elif kuu in [9, 10, 11]:
         return "sügi"
+    else:
+        print("Siseta õige arv!")
 #5
 def bank(a, years):
     for _ in range(years):
@@ -115,7 +117,7 @@ def date(day, month, year):
 #9
 def average(numbers):
     if not numbers:
-        return None
+        return None 
     return sum(numbers) / len(numbers)
 #10
 def min_max(numbers):
