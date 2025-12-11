@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>48f6f2aa-4ed1-47de-9505-de2a0f4864f9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>module2.py</StartupFile>
+    <StartupFile>5.2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="4.1 töö listiga.py" />
+    <Compile Include="5.2.py" />
     <Compile Include="IKTpv25_1_Abdulov.py" />
     <Compile Include="List Phytone.py" />
     <Compile Include="module1.py" />
