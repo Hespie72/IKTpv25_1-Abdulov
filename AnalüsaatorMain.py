@@ -7,6 +7,7 @@ while True:
 2 - Analüüsi faili
 3 - Loo raporti kataloog
 4 - Otsi faile algustähe järgi
+5 - otsi faili
 0 - Välju
 """)
 
@@ -28,6 +29,10 @@ while True:
         failid = leia_failid_algustahega()
         print("Leitud failid:", failid)
 
+    elif valik == "5":
+        otsitav_fail=input("Sisesta otsitava faili nimi(nt minu_fail.txt): ") 
+        tulemus == otsi_faili(otsitav_fail)
+        print(tulemus)
     elif valik == "0":
         print("Programm lõpetatud")
         break
