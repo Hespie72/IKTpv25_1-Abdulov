@@ -27,6 +27,7 @@ def analuusi_faili_sisu():
         "TODO": todo,
         "FIXME": fixme
 }
+
 def loo_raporti_kataloog():
     nimi = input("Sisesta raporti kataloogi nimi: ")
 
@@ -40,6 +41,7 @@ def leia_failid_algustahega():
     taht = input("Sisesta algustäht: ")
     failid = glob.glob(taht + "*.*")
     return failid
+
 def otsi_faili(faili_nimi, otsingu_tee="."):
     for juur, kaustad, failid in os.walk(otsingu_tee):
         if faili_nimi in failid:
