@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>48f6f2aa-4ed1-47de-9505-de2a0f4864f9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>AnalüsaatorMain.py</StartupFile>
+    <StartupFile>mainaanket.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,8 @@
   <ItemGroup>
     <Compile Include="4.1 töö listiga.py" />
     <Compile Include="5.2.py" />
+    <Compile Include="mainaanket.py" />
+    <Compile Include="moduleaanket.py" />
     <Compile Include="AnalüsaatorMain.py" />
     <Compile Include="AnalüsaatorModule.py" />
     <Compile Include="IKTpv25_1_Abdulov.py" />
@@ -33,6 +35,10 @@
     <Compile Include="VitaliiAbdulov 3 kontrol töö.py" />
     <Compile Include="VitaliiAbdulov3.py" />
     <Compile Include="Tund2_vitaliiabdulov.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="kusimused.txt" />
+    <Content Include="vastus.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

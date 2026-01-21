@@ -1,0 +1,3 @@
+﻿Mis on Python?
+Kuidas Pythonis teksti ekraanile kuvada?
+Millist andmetüüpi kasutatakse teksti salvestamiseks?
