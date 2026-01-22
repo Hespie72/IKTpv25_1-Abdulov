@@ -14,8 +14,7 @@ with open("vastus.txt","r",encoding="utf-8") as f:
         vas.append(rida.strip())
 
 def saada_email():
-    valik_nimi=input("Sisesta oma nimi?: ").lower().strip()
-    generator_email=valik_nimi+"@gmail.com"
+    generator_email=valik_nimi+"."+valik_perknimi+"@gmail.com"  
     kusemail=input(f"Kas see on teie eposti aadress {generator_email}? (jah/ei): ").lower().strip()
     if kusemail=="jah":
         kellele=generator_email
@@ -24,7 +23,7 @@ def saada_email():
     else:
         print("Palun sisesta jah või ei!")
         return saada_email()
-    kiri="""Tere, see on teie küsitluse tulemus."""
+    kiri=f"""Tere, see on teie küsitluse tulemus. {punktid}/"""
     teema="Küsimustik Pythonis"
     saatja_email="vitalya.abdulov.1979@gmail.com"
     parool="iccp iixp npok vsnp"
@@ -45,8 +44,12 @@ def saada_email():
         print(f"Midagi läks valesti... {e}")
 
 def kusimused():
+    global valik_nimi
+    global valik_perknimi
+    valik_nimi=input("Sisesta oma nimi?: ").lower().strip()
+    valik_perknimi=input("Sisesta oma perekonnanimi: ").lower()
     kuscount=0
-    for i in range(0, random.randint(0, len(kus)-1):
+    for i in range(0, random.randint(0, len(kus)-1)):
         kuscount = random.randint(0, len(kus)-1)
         print(kus[kuscount])
         answer=input("Sisesta oma vastus: ").lower().strip()
@@ -57,7 +60,7 @@ def kusimused():
         else:
             print(f"Vale vastus! Õige vastus on: {vas[kuscount]}")
         kuscount+=1
-    print(f"Sinu punktid on: {punktid}/3")
+    print(f"Sinu punktid on: {punktid}/")
 def lisa_uus_kus():
     mitu_kus=0
     with open("kusimused.txt","a",encoding="utf-8") as f:
